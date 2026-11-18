@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Savory House | Seasonal Restaurant</title>
+  <meta name="description" content="Savory House is a neighbourhood restaurant serving seasonal, wood-fired food. Explore the menu and reserve a table.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo">Savory House</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#reservation" class="btn btn-small">Book a table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80" alt="A beautifully plated dish at Savory House">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p class="hero-kicker">Wood-fired kitchen, open since 2012</p>
+        <h1>Good food deserves a slow evening.</h1>
+        <p class="hero-text">Seasonal ingredients, a live fire and a dining room made for long conversations.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-light">Explore Menu</a>
+          <a href="#reservation" class="btn btn-outline">Reserve a table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-images">
+          <img class="about-main" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="The warm, candlelit dining room at Savory House" loading="lazy">
+          <img class="about-small" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="A plate of grilled meat with seasonal vegetables" loading="lazy">
+        </div>
+        <div class="about-text">
+          <h2>A table set for the people you love</h2>
+          <p>Savory House began as a tiny kitchen with one oven and a simple idea: cook honest food from whatever the season offers, and take the time to do it properly.</p>
+          <p>Today our chefs still work with local farms and fishermen, finish most dishes over open flame, and change the menu as the weather turns. Come for a quiet dinner, a birthday, or a long Sunday lunch.</p>
+          <p class="about-sign">Chef Amara Bell and the Savory House team</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MENU ========== -->
+    <section class="section section-dark" id="menu">
+      <div class="container">
+        <header class="section-head">
+          <h2>From our kitchen</h2>
+          <p>Dishes change with the seasons. Ask your server about today's specials.</p>
+        </header>
+
+        <div class="menu-tabs" role="group" aria-label="Filter menu by course">
+          <button class="tab is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="tab" data-filter="starters" aria-pressed="false">Starters</button>
+          <button class="tab" data-filter="mains" aria-pressed="false">Mains</button>
+          <button class="tab" data-filter="desserts" aria-pressed="false">Desserts</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+          <article class="dish" data-category="starters">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80" alt="Burrata salad with charred peaches" loading="lazy">
+            <div class="dish-body">
+              <div class="dish-title"><h3>Charred Peach &amp; Burrata</h3><span class="price">$14</span></div>
+              <p>Creamy burrata, grilled peaches, basil oil and toasted hazelnuts.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-category="starters">
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=700&q=80" alt="Toasted sourdough with mushrooms and an egg" loading="lazy">
+            <div class="dish-body">
+              <div class="dish-title"><h3>Wild Mushroom Toast</h3><span class="price">$12</span></div>
+              <p>Sourdough, garlic mushrooms, soft egg and thyme butter.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-category="starters">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" alt="Grilled prawn skewers" loading="lazy">
+            <div class="dish-body">
+              <div class="dish-title"><h3>Harissa Prawn Skewers</h3><span class="price">$16</span></div>
+              <p>Fire-grilled prawns, smoked paprika yoghurt and lemon.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-category="mains">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80" alt="Fresh tagliatelle pasta with tomato sauce" loading="lazy">
+            <div class="dish-body">
+              <div class="dish-title"><h3>Hand-cut Tagliatelle</h3><span class="price">$22</span></div>
+              <p>Slow-cooked tomato, roasted garlic, parmesan and fresh basil.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-category="mains">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=700&q=80" alt="Pan-seared salmon with vegetables" loading="lazy">
+            <div class="dish-body">
+              <div class="dish-title"><h3>Pan-seared Salmon</h3><span class="price">$28</span></div>
+              <p>Crisp-skinned salmon, charred greens and caper butter.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-category="mains">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Grilled ribeye steak" loading="lazy">
+            <div class="dish-body">
+              <div class="dish-title"><h3>Dry-aged Ribeye</h3><span class="price">$38</span></div>
+              <p>Thirty-day aged beef cooked over embers, with bone-marrow jus.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Slice of dark chocolate cake" loading="lazy">
+            <div class="dish-body">
+              <div class="dish-title"><h3>Dark Chocolate Torte</h3><span class="price">$11</span></div>
+              <p>Rich 70% chocolate, sea salt and whipped crème fraîche.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80" alt="Vanilla cake topped with fresh berries" loading="lazy">
+            <div class="dish-body">
+              <div class="dish-title"><h3>Vanilla Berry Cake</h3><span class="price">$10</span></div>
+              <p>Light vanilla sponge layered with macerated summer berries.</p>
+            </div>
+          </article>
+
+          <article class="dish" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=700&q=80" alt="Stack of pancakes with fruit and syrup" loading="lazy">
+            <div class="dish-body">
+              <div class="dish-title"><h3>Brown Butter Pancakes</h3><span class="price">$10</span></div>
+              <p>Warm pancakes, seasonal fruit and maple syrup.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY ========== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <header class="section-head">
+          <h2>Inside Savory House</h2>
+          <p>Select any photo to view it larger.</p>
+        </header>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <button class="gallery-item tall" aria-label="Open photo: plated dish"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Elegantly plated dish" loading="lazy"></button>
+          <button class="gallery-item" aria-label="Open photo: dining room"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Our warm dining room" loading="lazy"></button>
+          <button class="gallery-item" aria-label="Open photo: grilled dinner"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Grilled meat with vegetables" loading="lazy"></button>
+          <button class="gallery-item wide" aria-label="Open photo: restaurant interior"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80" alt="Tables set for dinner service" loading="lazy"></button>
+          <button class="gallery-item" aria-label="Open photo: wood-fired pizza"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Wood-fired pizza" loading="lazy"></button>
+          <button class="gallery-item" aria-label="Open photo: seasonal plate"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=600&q=80" alt="A colourful seasonal plate" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESERVATION ========== -->
+    <section class="section section-tint" id="reservation">
+      <div class="container reservation-grid">
+        <div class="reservation-intro">
+          <h2>Reserve your table</h2>
+          <p>Tell us when you would like to visit and we will have a table ready. For parties of more than 10, please call us.</p>
+          <p class="note">This is a front-end demonstration. Your details are checked in the browser only and are not sent or stored anywhere.</p>
+        </div>
+
+        <div class="reservation-card">
+          <form id="reservation-form" novalidate>
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Jane Doe">
+              <p class="error" id="name-error" aria-live="polite"></p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="jane@example.com">
+                <p class="error" id="email-error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+1 555 123 4567">
+                <p class="error" id="phone-error" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="field-row three">
+              <div class="field">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+                <p class="error" id="date-error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="time">Time</label>
+                <select id="time" name="time"><option value="">Select time</option></select>
+                <p class="error" id="time-error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="guests">Guests</label>
+                <select id="guests" name="guests"><option value="">Select</option></select>
+                <p class="error" id="guests-error" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-full">Request reservation</button>
+          </form>
+
+          <div class="success" id="success" hidden tabindex="-1">
+            <h3>Thank you, <span id="success-name"></span>.</h3>
+            <p id="success-details"></p>
+            <p class="note">Demo only: no booking was made and nothing was saved.</p>
+            <button type="button" class="btn btn-outline-dark" id="new-booking">Make another request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-head">
+          <h2>Find us</h2>
+          <p>We would love to host you.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-block">
+            <h3>Address</h3>
+            <address>
+              128 Linden Street<br>
+              Old Town District<br>
+              Portland, OR 97204
+            </address>
+          </div>
+          <div class="contact-block">
+            <h3>Opening hours</h3>
+            <dl class="hours">
+              <div><dt>Tuesday to Thursday</dt><dd>5:00 pm to 10:00 pm</dd></div>
+              <div><dt>Friday and Saturday</dt><dd>5:00 pm to 11:00 pm</dd></div>
+              <div><dt>Sunday lunch</dt><dd>12:00 pm to 4:00 pm</dd></div>
+              <div><dt>Monday</dt><dd>Closed</dd></div>
+            </dl>
+          </div>
+          <div class="contact-block">
+            <h3>Get in touch</h3>
+            <p><a href="tel:+15035550142">+1 (503) 555-0142</a></p>
+            <p><a href="mailto:hello@savoryhouse.example">hello@savoryhouse.example</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Savory House</a>
+      <ul class="social" aria-label="Social media">
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://x.com" target="_blank" rel="noopener">X</a></li>
+        <li><a href="https://tripadvisor.com" target="_blank" rel="noopener">Tripadvisor</a></li>
+      </ul>
+      <p class="copy">&copy; <span id="year">2026</span> Savory House. A portfolio demonstration.</p>
+    </div>
+  </footer>
+
+  <!-- ========== GALLERY LIGHTBOX ========== -->
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button class="lb-btn lb-close" id="lb-close" aria-label="Close photo">&times;</button>
+    <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous photo">&#8249;</button>
+    <figure>
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" id="lb-next" aria-label="Next photo">&#8250;</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
